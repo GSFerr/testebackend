@@ -1,0 +1,21 @@
+---------------------------------
+|          People               |
+---------------------------------
+| - id: Long                    |
+| - nomeCompleto: String        |
+| - dataNascimento: LocalDate   |
+| - cpf: String                 |
+| - enderecos: List<Endereco>   |
+---------------------------------
+
+---------------------------------
+|          Address              |
+---------------------------------
+| - id: Long                    |
+| - publicPlace: String         |
+| - cep: String                 |
+| - number: String              |
+| - city: String                |
+| - state: String               |
+| - principal: boolean          |
+---------------------------------
