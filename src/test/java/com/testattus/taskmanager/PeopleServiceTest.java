@@ -71,7 +71,7 @@ public class PeopleServiceTest {
 		People people1 = new People();
 		people1.setName("Fulano");
 		people1.setDateOfBirth("1990-01-01");
-		people1.setCpf("12365498745");
+		people1.setCpf("12365498748");
 		People people2 = new People();
 		people2.setName("Ciclano");
 		people2.setDateOfBirth("1995-01-01");
