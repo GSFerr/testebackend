@@ -104,7 +104,7 @@ public class PeopleService {
     public People listByCpf(String cpf) {
         Optional<People> peopleOptional = peopleRepository.findByCpf(cpf);
         if (peopleOptional.isEmpty()) {
-            throw new IllegalArgumentException("Pessoa com o CPF " + cpf + " não encontrada");
+            throw new IllegalArgumentException("Pessoas com o CPF " + cpf + " não encontradas");
         }
         return peopleOptional.get();
     }
