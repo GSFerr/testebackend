@@ -110,5 +110,4 @@ public class Address implements Serializable {
         this.people = people;
     }
 
-
 }

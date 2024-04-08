@@ -21,7 +21,7 @@ public class People implements Serializable {
     @Column(nullable = false)
     private String dateOfBirth;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String cpf;
 
     @OneToMany(mappedBy = "people", cascade = CascadeType.ALL)

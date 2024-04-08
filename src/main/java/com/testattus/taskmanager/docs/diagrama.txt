@@ -2,10 +2,10 @@
 |          People               |
 ---------------------------------
 | - id: Long                    |
-| - nomeCompleto: String        |
-| - dataNascimento: LocalDate   |
+| - name: String                |
+| - dateOfBirth: LocalDate      |
 | - cpf: String                 |
-| - enderecos: List<Endereco>   |
+| - addresses: List<Address>    |
 ---------------------------------
 
 ---------------------------------

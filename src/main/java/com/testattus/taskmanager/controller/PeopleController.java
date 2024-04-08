@@ -42,8 +42,8 @@ public class PeopleController {
 
     @GetMapping("/listar-todas")
     public ResponseEntity<List<People>> listAllPeople() {
-        List<People> pessoas = peopleService.listAllPeople();
-        return ResponseEntity.ok(pessoas);
+        List<People> peoples = peopleService.listAllPeople();
+        return ResponseEntity.ok(peoples);
     }
 
     @GetMapping("/listar-por-cpf/{cpf}")
