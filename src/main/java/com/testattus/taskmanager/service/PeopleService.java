@@ -25,7 +25,8 @@ public class PeopleService {
     public People savePeople(People people) {
 
         // Verificar se todos os campos estão preenchidos
-        if (people.getName().isEmpty() || people.getDateOfBirth() == null || people.getAddresses().isEmpty()) {
+        if (people.getName().isEmpty() || people.getCpf().isEmpty() || people.getDateOfBirth() == null || people
+                .getAddresses().isEmpty()) {
             throw new IllegalArgumentException("Todos os campos devem ser preenchidos");
         }
 
@@ -57,7 +58,8 @@ public class PeopleService {
                 .orElseThrow(() -> new IllegalArgumentException("Pessoa não encontrada"));
 
         // Verificar se todos os campos obrigatórios estão preenchidos
-        if (editedPeople.getName().isEmpty() || editedPeople.getDateOfBirth().isEmpty()) {
+        if (editedPeople.getName().isEmpty() || editedPeople.getCpf().isEmpty() || editedPeople.getDateOfBirth()
+                .isEmpty()) {
             throw new IllegalArgumentException("Todos os campos obrigatórios devem ser preenchidos");
         }
 
